@@ -2,7 +2,7 @@
 
 Strawberry is a simplistic but advanced user system. It was designed by [@joericho](http://twitter.com/joericho) & developed by [@extramaster](https://twitter.com/extramaster)
 
-Strawberry was built with PHP & MySQL and uses [Smarty](http://www.smarty.net) as the template engine.
+Strawberry was built with PHP & MySQL and uses [Smarty](http://www.smarty.net) as the template engine and [Lemonade](http://joey.so/lemonade) as the grid system.
 
 
 # Getting Started
@@ -39,4 +39,10 @@ Once completed the above, open: http://yoururl.com/strawberry and create your ac
 
 # It's that simple.
 
-Yes, we've kept it simple - there is no admin panel or profile page (something we'd probably like to expand to), but it's really just a simplistic user system.
+Yes, we've kept it simple - there is no admin panel or profile page (something we'd probably like to expand to), but it's really just a simplistic user system where
+designers/developers can easily build their product on top it.
+
+If you have any issues or questions please [get in touch](https://github.com/lifesgood/strawberry/issues/new).
+
+You can follow us on twitter at: [@joericho](http://twitter.com/joericho) & [@extramaster](http://twitter.com/extramaster)
+<3
