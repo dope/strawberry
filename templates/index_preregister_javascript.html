@@ -1,0 +1,10 @@
+<!--<script type="text/javascript" src="js/jquery.h5validate.js"></script>-->
+<script type="text/javascript">
+$(document).ready(function () {
+   // $('#register').h5Validate();
+   
+    $("#password").on("change",function(){
+    $("#cfmPassword").attr("pattern",$(this).val());
+    });
+});
+</script>

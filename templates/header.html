@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+
+<html lang="en-US">
+
+<head>
+
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<link rel="stylesheet" type="text/css" href="assets/css/strawberry.css">
+ 	<link rel="stylesheet" type="text/css" href="assets/css/lemonade.css">
+ 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/popcorn-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+ 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700' rel='stylesheet' type='text/css'>
+
+	<title>{$title} &#8212; {$name}</title>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+{if $loggedIn == true}
+	<nav>
+        <ul>
+            <li><a class="active" href="index.php">Strawberry</a></li>
+        </ul>
+	</nav>
+{else}
+	<nav>
+		<ul>
+			<li><a class="active" href="index.php">Strawberry</a></li>
+			<li><a href="https://github.com/lifesgood/strawberry">GitHub</a></li>
+			<li><a href="https://github.com/lifesgood/strawberry/issues/new">Support</a></li>
+		</ul>
+	</nav>
+{/if}

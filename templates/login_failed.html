@@ -1,0 +1,31 @@
+
+<!-- invalid login! -->
+	<form action="login.php" method="post" id="login">
+	  {literal}
+<h1><img src="assets/img/logo.svg"/></h1>
+	  <input placeholder="Username" type="text" name="username" required="required" pattern=".{3,30}" title="Must be a valid username"/>
+	  <input placeholder="Password" type="password" name="password" required="required" pattern=".{5}.+" title="Must be longer then 5 characters"/>
+	  <button class="button">Login to your account</button>{/literal}
+          
+	  <div class="frame">
+	  	<div class="bit-1 invalid">{$errorMsg}
+      </div>
+          </div>
+	  <div class="frame">
+	  	<div class="bit-2 form-left"><a class="up" href="forgot.php">Forgot password?</a></div>
+	  	<div class="bit-2 form-right"><a href="./">Need an account?</a></div>
+  	  </div>
+	</form>
+{literal}
+<div class="pop">
+  		<span><i class="glyph-cross-white"></i></span>
+  		<div class="main-pop">
+  			<h1 class="lost">Lost your password?</h1>
+			<form class="forgot" action="forgot.php" method="post">
+			  <input placeholder="Your Email" type="text" name="email" type="email" required="required" pattern="[^ @]*@[^ @]*" title="Please enter a valid email address!"/>
+			  <button class="button">Request your Password</button>
+			</form>
+  		</div>
+	</div>
+
+{/literal}

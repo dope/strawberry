@@ -1,0 +1,84 @@
+/*
+ + Strawberry V1
+ + Copyright 2013 Life's Good
+ +
+ + Licensed under the Apache License
+ + http://www.apache.org/licenses/LICENSE-2.0
+ +
+ + Designed by @joericho
+ + Developed by @extramaster
+ +
+ */
+
+ /* Landscape and down
+===============================*/
+@media (max-width: 480px) {
+  form {
+    width:90%;
+    padding:50px 20px 30px 20px;
+  }
+
+  .form-left,.form-right {
+    width:50%;
+    margin-top:20px;
+  }
+
+  .forgot {
+    width:100%;
+  }
+
+  .main-pop {
+    width:90%;
+  }
+
+  nav {
+    text-align:left;
+    padding:10px 0px 10px 0px;
+  }
+
+  nav > ul > li > a,a:visited {
+    padding:10px;
+  }
+}
+
+/* Landscape to Tablet Portrait
+===============================*/
+@media (min-width: 481px) and (max-width: 800px) {
+ form {
+    width:70%;
+  }
+
+  .form-left,.form-right {
+    width:50%;
+  }
+
+  .forgot {
+    width:100%;
+  }
+
+  .main-pop {
+    width:90%;
+  }
+
+}
+
+/* Landscape Tablet to Desktop
+===============================*/
+@media (min-width: 801px) and (max-width: 1100px) {
+ form {
+    width:60%;
+  }
+
+  .form-left,.form-right {
+    width:50%;
+  }
+
+  .forgot {
+    width:80%;
+  }
+
+  .main-pop {
+    width:90%;
+  }
+
+}

@@ -1,0 +1,116 @@
+/*
+ + Popcorn V1
+ + Copyright 2013 Life's Good
+ +
+ + Made by @joericho
+ */
+ 
+[class*="glyph-"] {
+  background: url('../img/icons.svg');
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+[class*="glyph-"]:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+}
+.glyph-user {
+  background-position: 0 0px;
+}
+.glyph-lock {
+  background-position: -30px 0;
+}
+.glyph-cog {
+  background-position: -60px 0;
+}
+.glyph-love {
+  background-position: -90px 0;
+}
+.glyph-left {
+  background-position: -120px 0;
+}
+.glyph-tick-circle {
+  background-position: 0px -30px;
+}
+.glyph-cross-circle {
+  background-position: -30px -30px;
+}
+.glyph-cross {
+  background-position: -60px -30px;
+}
+.glyph-tick {
+  background-position: -90px -30px;
+}
+.glyph-right {
+  background-position: -120px -30px;
+}
+.glyph-list {
+  background-position: 0 -60px;
+}
+.glyph-search {
+  background-position: -30px -60px;
+}
+.glyph-speech {
+  background-position: -60px -60px;
+}
+.glyph-eye {
+  background-position: -90px -60px;
+}
+.glyph-pin {
+  background-position: -120px -60px;
+}
+.glyph-user-white {
+  background-position: 0px -90px;
+}
+.glyph-lock-white {
+  background-position: -30px -90px;
+}
+.glyph-cog-white {
+  background-position: -60px -90px;
+}
+.glyph-love-white {
+  background-position: -90px -90px;
+}
+.glyph-left-white {
+  background-position: -120px -90px;
+}
+.glyph-tick-circle-white {
+  background-position: 0px -120px;
+}
+.glyph-cross-circle-white {
+  background-position: -30px -120px;
+}
+.glyph-cross-white {
+  background-position: -60px -120px;
+}
+.glyph-tick-white {
+  background-position: -90px -120px;
+}
+.glyph-right-white {
+  background-position: -120px -120px;
+}
+.glyph-list-white {
+  background-position: 0 -150px;
+}
+.glyph-search-white {
+  background-position: -30px -150px;
+}
+.glyph-speech-white {
+  background-position: -60px -150px;
+}
+.glyph-eye-white {
+  background-position: -90px -150px;
+}
+.glyph-pin-white {
+  background-position: -120px -150px;
+}
