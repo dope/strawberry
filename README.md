@@ -23,9 +23,6 @@ define("DB_password","Your Password");
 define("DB_name","Your DB name");
 
 
-
-
-
 /* LOGINSYSTEM-RELATED VARIABLES */
 
 // This is the email that is to be used in the email's headers
