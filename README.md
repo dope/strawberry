@@ -34,3 +34,9 @@ define("SET_directory","your location for Strawberry");
 // This is where the name of the system can be set!
 define("SET_name","Strawberry");
 ```
+
+Once completed the above, open: http://yoururl.com/strawberry and create your account, confirm your email and then login.
+
+# It's that simple.
+
+Yes, we've kept it simple - there is no admin panel or profile page (something we'd probably like to expand to), but it's really just a simplistic user system.
