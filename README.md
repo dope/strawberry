@@ -7,7 +7,7 @@ Strawberry was built with PHP & MySQL and uses [Smarty](http://www.smarty.net) a
 
 # Getting Started
 
-First download the main [.zip]() and extract to your server and then open up `settings.php` and change the follow
+First download the [master.zip](https://github.com/lifesgood/strawberry/archive/master.zip) and extract to your server and then open up `settings.php` and change the follow
 
 ```
 /* DATABASE-RELATED VARIABLES */
