@@ -1,11 +1,12 @@
 # [Strawberry](http://lifes.gd/strawberry)
 
 Strawberry is a simplistic but advanced user system. It was built with PHP & MySQL and uses [Smarty](http://www.smarty.net) and [Lemonade](http://joey.so/lemonade).
+
 Designed by [@joericho](http://twitter.com/joericho) & developed by [@extramaster](https://twitter.com/extramaster)
 
 # Getting Started
 
-First download the [master.zip](https://github.com/lifesgood/strawberry/archive/master.zip) and extract to your server and then open up `settings.php` and change the following to:
+First download the [master.zip](https://github.com/lifesgood/strawberry/archive/master.zip) and extract to your server and then open up `settings.php` and change the following details:
 
 ```
 /* DATABASE-RELATED VARIABLES */
