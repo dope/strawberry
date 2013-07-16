@@ -1,13 +1,11 @@
 # [Strawberry](http://lifes.gd/strawberry)
 
-Strawberry is a simplistic but advanced user system. It was designed by [@joericho](http://twitter.com/joericho) & developed by [@extramaster](https://twitter.com/extramaster)
-
-Strawberry was built with PHP & MySQL and uses [Smarty](http://www.smarty.net) as the template engine and [Lemonade](http://joey.so/lemonade) as the grid system.
-
+Strawberry is a simplistic but advanced user system. It was built with PHP & MySQL and uses [Smarty](http://www.smarty.net) and [Lemonade](http://joey.so/lemonade).
+Designed by [@joericho](http://twitter.com/joericho) & developed by [@extramaster](https://twitter.com/extramaster)
 
 # Getting Started
 
-First download the [master.zip](https://github.com/lifesgood/strawberry/archive/master.zip) and extract to your server and then open up `settings.php` and change the follow
+First download the [master.zip](https://github.com/lifesgood/strawberry/archive/master.zip) and extract to your server and then open up `settings.php` and change the following to:
 
 ```
 /* DATABASE-RELATED VARIABLES */
@@ -35,7 +33,7 @@ define("SET_directory","your location for Strawberry");
 define("SET_name","Strawberry");
 ```
 
-Once completed the above, open: http://yoururl.com/strawberry and create your account, confirm your email and then login.
+Once completed the above, open the directory you have extracted Strawberry to, and create your account, confirm your email and then login.
 
 # It's that simple.
 
@@ -45,4 +43,5 @@ designers/developers can easily build their product on top of it.
 If you have any issues or questions please [get in touch](https://github.com/lifesgood/strawberry/issues/new).
 
 You can follow us on twitter at: [@joericho](http://twitter.com/joericho) & [@extramaster](http://twitter.com/extramaster)
-<3
+
+Thanks <3
