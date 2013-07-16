@@ -40,7 +40,7 @@ Once completed the above, open: http://yoururl.com/strawberry and create your ac
 # It's that simple.
 
 Yes, we've kept it simple - there is no admin panel or profile page (something we'd probably like to expand to), but it's really just a simplistic user system where
-designers/developers can easily build their product on top it.
+designers/developers can easily build their product on top of it.
 
 If you have any issues or questions please [get in touch](https://github.com/lifesgood/strawberry/issues/new).
 
