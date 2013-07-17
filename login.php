@@ -63,6 +63,7 @@ $smarty->display('templates/login_prelogin.html');
 if ($valid){
 // When the login is sucessful...
 $_SESSION["username"]=$row["username"];
+$_SESSION["email"]=$row["email"];
 
 $smarty->display('templates/login_success.html');
 

@@ -25,9 +25,22 @@
 {if $loggedIn == true}
 	<nav>
         <ul>
-            <li><a class="active" href="index.php">Strawberry</a></li>
+            <li><a class="active" href="./">Strawberry</a></li>
+            <li class="welcomes">
+                <div class="welcoming">
+                    <div class="welcomed">
+		        <a href="profile.php" id="welcomesUser">Welcome, {$username}! <img src="assets/img/dropdown.png" id="dropIcon" />
+                        </a>
+                        <div id="externalProfileBox">
+                            <a href="profile.php"><img src="{$gravatar}" id="profileIcon" /></a>
+                        </div>
+                    <a class="log-block" href="logout.php">Logout</a>
+                    </div>
+                </div>
+            </li>
         </ul>
 	</nav>
+
 {else}
 	<nav>
 		<ul>

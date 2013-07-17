@@ -1,3 +1,5 @@
+var tmpHeight;
+
 $(document).ready(function () {
     $(".up").click(function (event) {
         event.preventDefault();
@@ -8,4 +10,11 @@ $(document).ready(function () {
     $(".pop > span").click(function () {
         $(".pop").stop().fadeOut(300);
     });
+
+    $("#welcomesUser").click(function (event) {
+        event.preventDefault();
+        tmpHeight=$("#externalProfileBox").css("height");
+        $("#externalProfileBox").stop().css({height:"0%",display:"block"}).animate({height:tmpHeight,opacity:"1"},{queue:false});
+    });
+
 });

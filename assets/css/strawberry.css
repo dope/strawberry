@@ -18,6 +18,11 @@ nav {
   padding: 0px;
   background: rgba(0, 0, 0, 0.1);
 }
+
+nav > ul {
+  position:relative;
+}
+
 nav > ul > li {
   list-style: none;
   display: inline-block;
@@ -229,20 +234,34 @@ form:after {
 }
 
 .welcomes {
-  position: absolute;
-  top:12px;
-  right:73px;
+  position:absolute;
+  top:0px;
+  height:100%;
+  right:8px;
+}
+
+.welcoming{
+  display:table;
+  height:100%;
+  
+}
+
+.welcomed {
   font-size:1.2em;
   color:#fff;
   font-weight:500;
-  padding:8px;
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.welcomes a {
+  color:#ffffff;
 }
 
 .log-block,.log-block:visited {
-  right:13px;
   background:#f26964;
   border-radius:6px;
-  color:#fff;
+  padding:8px;
 }
 
 .log-block:hover {
@@ -251,4 +270,76 @@ form:after {
 
 .logged-in {
   text-align:left;
+}
+
+
+#dropIcon{
+  position:relative;
+  height:19px;
+  width:auto;
+  vertical-align: middle;
+}
+
+@-webkit-keyframes animateArrow {
+  0% { top:0px; }
+  75% { top:5px; }
+  0% { top:0px; }
+}
+
+@-moz-keyframes animateArrow {
+  0% { top:0px; }
+  75% { top:5px; }
+  0% { top:0px; }
+}
+
+@-o-keyframes animateArrow {
+  0% { top:0px; }
+  75% { top:5px; }
+  0% { top:0px; }
+}
+
+@keyframes animateArrow {
+  0% { top:0px; }
+  75% { top:5px; }
+  0% { top:0px; }
+}
+
+#welcomesUser:hover #dropIcon{
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-name: animateArrow;
+  -webkit-animation-iteration-count: infinite;
+
+  -moz-animation-duration: 0.6s;
+  -moz-animation-name: animateArrow;
+  -moz-animation-iteration-count: infinite;
+
+  -o-animation-duration: 0.6s;
+  -o-animation-name: animateArrow;
+  -o-animation-iteration-count: infinite;
+
+  animation-duration: 0.6s;
+  animation-name: animateArrow;
+  animation-iteration-count: infinite;
+}
+
+#dropIcon:hover{
+  -webkit-animation-name: none;
+  -moz-animation-name: none;
+  -o-animation-name: none;
+  animation-name: none;
+}
+
+#externalProfileBox{
+  position:absolute;
+  display:none;
+  opacity:0;
+  top:59px;
+  right:0px;
+  padding:20px;
+  background-color:white;
+  box-shadow:0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#profileIcon{
+  height:64px;
 }
