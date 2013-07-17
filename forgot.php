@@ -3,6 +3,12 @@ require_once 'settings.php';
 
 
 
+if(!isset($_SESSION)) { 
+    session_start(); 
+} 
+
+
+
 require('libs/Smarty.class.php');
 $smarty = new Smarty;
 $smarty->assign("title","Forgot Password");
@@ -27,6 +33,7 @@ mysqli_select_db($link,DB_name);
 
 
 if (isset($_POST["auth"])){
+
 
 
 $auth=$_POST["auth"];
@@ -58,16 +65,29 @@ if ($result){
 
 if ($valid){
 
-         $sql = "UPDATE accountMap SET password = '" . (genPassword($password,$username)) . "' WHERE username = '" . mysqli_real_escape_string($link,$username) . "'";
-         mysqli_query($link,$sql);
+    if(!isset($_SESSION)) { 
+        session_start(); 
+    } 
+    $_SESSION = array();
+    if (ini_get("session.use_cookies")) {
+        $params = session_get_cookie_params();
+        setcookie(session_name(), '', time() - 42000,
+            $params["path"], $params["domain"],
+            $params["secure"], $params["httponly"]
+        );
+    }
+    session_destroy();
 
 
-$smarty->display('templates/forgot_newpassword_success.html');
+    $sql = "UPDATE accountMap SET password = '" . (genPassword($password,$username)) . "' WHERE username = '" . mysqli_real_escape_string($link,$username) . "'";
+    mysqli_query($link,$sql);
+
+    $smarty->display('templates/forgot_newpassword_success.html');
 
 
 }else{
-$smarty->assign("errorMsg",$errorMsg);
-$smarty->display('templates/forgot_newpassword_failed.html');
+    $smarty->assign("errorMsg",$errorMsg);
+    $smarty->display('templates/forgot_newpassword_failed.html');
 }
 
 
