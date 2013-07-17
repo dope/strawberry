@@ -29,22 +29,6 @@ mysqli_select_db($link,DB_name);
 if (isset($_POST["auth"])){
 
 
-
-if(!isset($_SESSION)) { 
-    session_start(); 
-} 
-$_SESSION = array();
-if (ini_get("session.use_cookies")) {
-    $params = session_get_cookie_params();
-    setcookie(session_name(), '', time() - 42000,
-        $params["path"], $params["domain"],
-        $params["secure"], $params["httponly"]
-    );
-}
-session_destroy();
-
-
-
 $auth=$_POST["auth"];
 $username=$_POST["username"];
 $password=$_POST["password"];
