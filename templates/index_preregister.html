@@ -1,10 +1,10 @@
 {literal}
 	<form action="register.php" method="post" id="register">
 	  <h1><img src="assets/img/logo.svg"/></h1>
-	  <input placeholder="Enter a username" type="text" name="username" required="required" pattern=".{3,30}" title="Must be between 3 and 30 characters long!"/>
-	  <input placeholder="Enter your email" type="text" name="email" type="email" required="required" pattern="[^ @]*@[^ @]*" title="Please enter a valid email address!"/>
-	  <input placeholder="Password" type="password" id="password" required="required" title="Must be longer then 5 characters" pattern=".{5}.+"/>
-	  <input placeholder="Password, again" type="password" id="cfmPassword" name="password" required="required" pattern="" title="Please enter a matching password"/>
+	  <input placeholder="Enter a username" type="text" name="username" required="required" pattern=".{3,30}" title="Must be between 3 and 30 characters long!" autocapitalize="off"/>
+	  <input placeholder="Enter your email" name="email" type="email" required="required" pattern="[^ @]*@[^ @]*" title="Please enter a valid email address!" autocapitalize="off"/>
+	  <input placeholder="Password" type="password" id="password" required="required" title="Must be longer then 5 characters" pattern=".{5}.+" autocapitalize="off"/>
+	  <input placeholder="Password, again" type="password" id="cfmPassword" name="password" required="required" pattern="" title="Please enter a matching password" autocapitalize="off"/>
 	  <button class="button" type="submit">Register with Strawberry</button>
 	  <div class="frame">
 	  	<div class="bit-2 form-left"><a class="up" href="#">Terms and Conditions</a></div>
