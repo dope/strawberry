@@ -1,0 +1,155 @@
+nav {
+    position:relative;
+    background:#212b35;
+    padding:10px;
+    height:60px;
+    font-size:15px;
+}
+
+nav.toggle {
+   height: 100%;
+}
+
+nav > ul > li {
+    display:inline-block;
+}
+
+nav > ul > li > a,a:visited {
+    color:#777;
+    font-weight:300;
+    display:block;
+    padding:10px
+}
+
+nav > ul > li > a,a:visited {
+    color:#777;
+    font-weight:300;
+    display:block;
+    padding:10px
+}
+
+
+.active {
+    color:#fff!important;
+    font-weight:600;
+}
+
+nav > ul > li > a:hover {
+    color:#fff;
+}
+
+.nav-btn {
+    position:absolute;
+    top:20px;
+    right:25px;
+    display:none;
+}
+
+ /* Landscape and down
+===============================*/
+@media (max-width: 480px) {
+    .nav-btn {
+        display:block;
+    }
+
+    nav > ul > li > .log-block {
+        position:relative;
+        top:20px;
+        width:100%;
+        display:block;
+        left:0;
+        margin-bottom:127px;
+    }
+
+    nav {
+        height:60px;
+        overflow:hidden;
+    }
+
+    nav > ul > li {
+        display:block;
+    } 
+
+    .dropper:before {
+        border-left:0;
+        border-right:0;
+        border-bottom:0;
+    }
+
+    .loggy {
+        border-radius:0;
+        background:#212b35;
+        color:#fff!important;
+    }
+
+    .dropper {
+        background:#212b35;
+        display:block;
+        width:100%;
+        top:130px;
+        color:#fff!important;
+        left:0;
+        border-radius:0;
+    }
+}
+
+/* Landscape to Tablet Portrait
+===============================*/
+@media (min-width: 481px) and (max-width: 800px) {
+    .nav-btn {
+        display:block;
+    }
+
+    nav {
+        height:60px;
+        overflow:hidden;
+    }
+
+    nav > ul > li > .log-block {
+        position:relative;
+        top:20px;
+        width:100%;
+        display:block;
+        left:0;
+        margin-bottom:127px;
+    }
+
+
+    nav > ul > li {
+        display:block;
+    } 
+
+    nav > ul > li > a:hover {
+        color:#fff;
+        border-radius:4px;
+    }
+
+    .dropper:before {
+        border-left:0;
+        border-right:0;
+        border-bottom:0;
+    }
+
+    .loggy {
+        border-radius:0;
+        background:#212b35;
+        color:#fff!important;
+    }
+
+    .dropper {
+        background:#212b35;
+        display:block;
+        width:100%;
+        top:130px;
+        color:#fff!important;
+        left:0;
+        border-radius:0;
+    }
+}
+
+/* Landscape Tablet to Desktop
+===============================*/
+@media (min-width: 801px) and (max-width: 1100px) {
+
+
+}

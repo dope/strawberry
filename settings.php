@@ -7,11 +7,11 @@
 define("DB_host","localhost");
 
 // This is where the MySQL credientials is set
-define("DB_username","Your DB Username");
-define("DB_password","Your Password");
+define("DB_username","root");
+define("DB_password","root");
 
 // This is the "database" name of the login system...
-define("DB_name","Your DB name");
+define("DB_name","strawberry");
 
 
 

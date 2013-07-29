@@ -31,8 +31,7 @@ $smarty->assign("loggedIn",true);
 $smarty->assign("gravatar",$grav_url);
 $smarty->assign("username",$_SESSION["username"]);
 $smarty->display('templates/header.html');
-echo '<img src="' . ("http://www.gravatar.com/avatar/" . md5( strtolower( trim( $_SESSION["email"] ) ) ) . '?d=' . urlencode( "http://lifes.gd/cloud.jpg" ) . "&s=512") . '" alt="" />
-
+echo '<img src="' . ("http://www.gravatar.com/avatar/" . md5( strtolower( trim( $_SESSION["email"] ) ) ) . '?d=' . urlencode( "http://lifes.gd/cloud.jpg" ) . "&s=150") . '" alt="" class="profile-avatar" />
 
 ';
 $smarty->display('templates/footer_javascript.html');

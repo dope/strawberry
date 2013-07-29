@@ -12,6 +12,7 @@
  	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/popcorn-icons.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/biggie.css">
 
  	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700' rel='stylesheet' type='text/css'>
 
@@ -23,23 +24,24 @@
 </head>
 <body>
 {if $loggedIn == true}
-	<nav>
+
+    <nav>
         <ul>
             <li><a class="active" href="./">Strawberry</a></li>
-            <li class="welcomes">
-                <div class="welcoming">
-                    <div class="welcomed">
-		        <a href="profile.php" id="welcomesUser">Welcome, {$username}! <img src="assets/img/dropdown.png" id="dropIcon" />
-                        </a>
-                        <div id="externalProfileBox">
-                            <a href="profile.php"><img src="{$gravatar}" id="profileIcon" /></a>
-                        </div>
-                    <a class="log-block" href="logout.php">Logout</a>
-                    </div>
-                </div>
+		    <li><a class="log-block"  href="#">
+		        <img src="{$gravatar}" id="profileIcon" />
+		        	{$username}
+		       </a>
+            
+		       <div class="dropper">
+		       	<a class="block" href="profile.php">Profile</a>
+		       	<a class="block loggy" href="logout.php">Logout</a>
+		       </div>
             </li>
         </ul>
-	</nav>
+
+        <i class="nav-btn glyph-list-white"></i>
+    </nav>
 
 {else}
 	<nav>
@@ -48,5 +50,7 @@
 			<li><a href="https://github.com/lifesgood/strawberry">GitHub</a></li>
 			<li><a href="https://github.com/lifesgood/strawberry/issues/new">Support</a></li>
 		</ul>
+
+		<i class="nav-btn glyph-list-white"></i>
 	</nav>
 {/if}

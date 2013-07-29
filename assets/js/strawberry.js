@@ -13,8 +13,23 @@ $(document).ready(function () {
 
     $("#welcomesUser").click(function (event) {
         event.preventDefault();
-        tmpHeight=$("#externalProfileBox").css("height");
-        $("#externalProfileBox").stop().css({height:"0%",display:"block"}).animate({height:tmpHeight,opacity:"1"},{queue:false});
+        tmpHeight = $("#externalProfileBox").css("height");
+        $("#externalProfileBox").stop().css({
+            height: "0%",
+            display: "block"
+        }).animate({
+            height: tmpHeight,
+            opacity: "1"
+        }, {
+            queue: false
+        });
     });
-
 });
+
+
+// Dropdown 
+$(document).ready(function(e){
+   $('.log-block').on('click',function(){
+      $('.dropper').stop().slideToggle();
+   });
+})

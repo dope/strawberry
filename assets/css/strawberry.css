@@ -14,39 +14,7 @@ body {
   background: #2a3644;
   font: 12px "Source Sans Pro";
 }
-nav {
-  padding: 0px;
-  background: rgba(0, 0, 0, 0.1);
-}
 
-nav > ul {
-  position:relative;
-}
-
-nav > ul > li {
-  list-style: none;
-  display: inline-block;
-}
-nav > ul > li > a,
-a:visited {
-  display: block;
-  font-size:15px;
-  color: #576875;
-  text-decoration: none;
-  padding: 20px;
-  font-weight: 300;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-nav > ul > li > a:hover {
-  color: #ffffff;
-}
-.active,
-.active:visited {
-  font-weight: 600;
-  color: #ffffff;
-}
 form {
   text-align: center;
   margin: 50px auto;
@@ -260,86 +228,78 @@ form:after {
 
 .log-block,.log-block:visited {
   background:#f26964;
+  color:#fff;
   border-radius:6px;
-  padding:8px;
+  position:absolute;
+  top:9px;
+  right:28px;
+  padding:12px;
+  padding-left:50px;
+  padding-right:25px;
 }
 
 .log-block:hover {
-  opacity:0.8;
+  opacity:0.9!important;
 }
 
 .logged-in {
   text-align:left;
 }
 
-
-#dropIcon{
-  position:relative;
-  height:19px;
-  width:auto;
-  vertical-align: middle;
-}
-
-@-webkit-keyframes animateArrow {
-  0% { top:0px; }
-  75% { top:5px; }
-  0% { top:0px; }
-}
-
-@-moz-keyframes animateArrow {
-  0% { top:0px; }
-  75% { top:5px; }
-  0% { top:0px; }
-}
-
-@-o-keyframes animateArrow {
-  0% { top:0px; }
-  75% { top:5px; }
-  0% { top:0px; }
-}
-
-@keyframes animateArrow {
-  0% { top:0px; }
-  75% { top:5px; }
-  0% { top:0px; }
-}
-
-#welcomesUser:hover #dropIcon{
-  -webkit-animation-duration: 0.6s;
-  -webkit-animation-name: animateArrow;
-  -webkit-animation-iteration-count: infinite;
-
-  -moz-animation-duration: 0.6s;
-  -moz-animation-name: animateArrow;
-  -moz-animation-iteration-count: infinite;
-
-  -o-animation-duration: 0.6s;
-  -o-animation-name: animateArrow;
-  -o-animation-iteration-count: infinite;
-
-  animation-duration: 0.6s;
-  animation-name: animateArrow;
-  animation-iteration-count: infinite;
-}
-
-#dropIcon:hover{
-  -webkit-animation-name: none;
-  -moz-animation-name: none;
-  -o-animation-name: none;
-  animation-name: none;
-}
-
-#externalProfileBox{
-  position:absolute;
-  display:none;
-  opacity:0;
-  top:59px;
-  right:0px;
-  padding:20px;
-  background-color:white;
-  box-shadow:0px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
 #profileIcon{
-  height:64px;
+  position:absolute;
+  top:6px;
+  left:18px;
+  height:23px;
+  margin-top:5px;
+  -webkit-border-radius:100px;
+  -moz-border-radius:100px;
+  border-radius:100px;
+}
+
+.profile-avatar {
+  border-radius:40px;
+  padding:20px;
+}
+
+.dropper {
+  position:absolute;
+  background:#fff;
+  border-radius:4px;
+  top:65px;
+  right:55px;
+  display:none;
+  text-align:left;
+}
+
+.block {
+  display:block;
+  padding:10px;
+  padding-right:30px;
+  padding-left:30px;
+}
+
+.loggy {
+  background:#f26964;
+  color:#fff!important;
+  -webkit-border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.dropper:before {
+  position:absolute;
+  top:-5px;
+  left:0;
+  right:0;
+  margin:0 auto;
+  content:"";
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
 }
