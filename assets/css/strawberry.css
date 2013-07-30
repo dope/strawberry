@@ -11,21 +11,54 @@
  */
 
 body {
-  background: #2a3644;
+  background: #f4f4f4;
+  color:#2a3644;
   font: 12px "Source Sans Pro";
+}
+
+body.landing {
+  background:#212b36;
+}
+
+@-webkit-keyframes cssAnimation {
+    from {
+        -webkit-transform: translate(-1200px);
+    }
+    to {
+        -webkit-transform: translate(0px);
+    }
+}
+@-moz-keyframes cssAnimation {
+    from {
+        -moz-transform: rotate(0deg) skew(-180deg) translate(-300px);
+    }
+    to {
+        -moz-transform: rotate(0deg) skew(-180deg) translate(300px);
+    }
+}
+@-o-keyframes cssAnimation {
+    from {
+        -o-transform: rotate(0deg) skew(-180deg) translate(-300px);
+    }
+    to {
+        -o-transform: rotate(0deg) skew(-180deg) translate(300px);
+    }
 }
 
 form {
   text-align: center;
   margin: 50px auto;
   width: 40%;
-  background: #eef0f3;
+  background: #2a3644;
   padding: 40px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   border-radius: 6px;
+  -webkit-animation: cssAnimation 1s 1 ease;
+  -moz-animation: cssAnimation 1s 1 ease;
+  -o-animation: cssAnimation 1s 1 ease;
 }
 form > h1 {
   font-size: 3em;
@@ -39,6 +72,7 @@ form > input {
   position: relative;
   display: block;
   width: 100%;
+  color:#fff;
   padding: 20px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -46,7 +80,7 @@ form > input {
   -o-border-radius: 6px;
   border-radius: 6px;
   border: 0;
-  background: #ffffff;
+  background: rgba(0,0,0,0.1);
   margin-bottom: 10px;
   font-family: "Source Sans Pro";
   font-size: 1.3em;
@@ -60,14 +94,14 @@ form > input:focus {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: #f4f4f4;
-  color: #111111;
+  background: rgba(0,0,0,.3);
+  color: #fff;
 }
 .up,.up:visited {
-  color:#777;
+  color:#fff;
 }
 .ua,.ua:visited {
-  color:#777;
+  color:#fff;
 }
 .button {
   font-family: "Source Sans Pro";
@@ -110,10 +144,10 @@ form:after {
   clear: both;
 }
 ::-webkit-input-placeholder {
-  color: #cdcdcd;
+  color: #ffffff;
 }
 ::-moz-placeholder {
-  color: #cdcdcd;
+  color: #ffffff;
 }
 .form-left {
   text-align: left;
@@ -176,7 +210,7 @@ form:after {
   text-align: center;
   padding:60px 0px 100px 0px;
   font-size:2em;
-  color:#fff;
+  color:#2a3644;
   font-weight:300;
   text-shadow:1px 1px  0px rgba(0,0,0,.1);
 }
@@ -227,19 +261,21 @@ form:after {
 }
 
 .log-block,.log-block:visited {
-  background:#f26964;
+  background:rgba(0,0,0,.2);
   color:#fff;
   border-radius:6px;
   position:absolute;
-  top:9px;
-  right:28px;
+  top:7px;
+  right:7px;
   padding:12px;
+  font-weight:500;
+  padding-bottom:13px;
   padding-left:50px;
   padding-right:25px;
 }
 
 .log-block:hover {
-  opacity:0.9!important;
+  background:#2a3644;
 }
 
 .logged-in {
@@ -258,16 +294,19 @@ form:after {
 }
 
 .profile-avatar {
-  border-radius:40px;
-  padding:20px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
+  margin-top:80px;
+  margin-bottom:30px;
 }
 
 .dropper {
   position:absolute;
   background:#fff;
   border-radius:4px;
-  top:65px;
-  right:55px;
+  top:70px;
+  right:32px;
   display:none;
   text-align:left;
 }
@@ -277,10 +316,12 @@ form:after {
   padding:10px;
   padding-right:30px;
   padding-left:30px;
+  color:#fff!important;
+  background:#f26964;
 }
 
 .loggy {
-  background:#f26964;
+  background:#2a3644;
   color:#fff!important;
   -webkit-border-bottom-right-radius: 4px;
   -webkit-border-bottom-left-radius: 4px;
@@ -288,6 +329,10 @@ form:after {
   -moz-border-radius-bottomleft: 4px;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
+}
+
+.loggy:hover,.block:hover {
+  opacity:0.9;
 }
 
 .dropper:before {
@@ -299,7 +344,21 @@ form:after {
   content:"";
   width: 0; 
   height: 0; 
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #fff;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #f26964;
+}
+
+.profile-wrap {
+  text-align: center;
+}
+
+.profile-settings {
+  list-style:none;
+  color:#2a3644;
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom:10px;
+  font-size:20px;
+  font-weight:600;
 }

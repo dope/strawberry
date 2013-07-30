@@ -15,7 +15,8 @@
 @media (max-width: 480px) {
   form {
     width:90%;
-    padding:50px 20px 30px 20px;
+    margin-top:25px;
+    padding:30px 17px 30px 17px;
   }
 
   .form-left,.form-right {

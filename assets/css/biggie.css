@@ -1,9 +1,10 @@
 nav {
     position:relative;
-    background:#212b35;
+    background:#2a3644;
     padding:10px;
     height:60px;
     font-size:15px;
+    text-align:left!important;
 }
 
 nav.toggle {
@@ -22,7 +23,7 @@ nav > ul > li > a,a:visited {
 }
 
 nav > ul > li > a,a:visited {
-    color:#777;
+    color:#fff;
     font-weight:300;
     display:block;
     padding:10px
@@ -40,9 +41,8 @@ nav > ul > li > a:hover {
 
 .nav-btn {
     position:absolute;
-    top:0px;
-    right:0px;
-    padding:20px;
+    top:20px;
+    right:25px;
     display:none;
 }
 
