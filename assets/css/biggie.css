@@ -41,8 +41,9 @@ nav > ul > li > a:hover {
 
 .nav-btn {
     position:absolute;
-    top:20px;
-    right:25px;
+    top:0px;
+    right:0px;
+    padding:20px;
     display:none;
 }
 
