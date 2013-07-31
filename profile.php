@@ -20,26 +20,18 @@ $smarty->assign("title","User Panel");
 $smarty->assign("name",SET_name);
 
 
-    // Variables involved when the user is already logged in
-    $defaultGravatar="http://lifes.gd/cloud.jpg";
-    $sizeGravatar="64";
-    $grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $_SESSION["email"] ) ) ) . "?d=" . urlencode( $defaultGravatar ) . "&s=" . $sizeGravatar;
-
+// Variables involved when the user is already logged in
+$defaultGravatar="http://lifes.gd/cloud.jpg";
+$sizeGravatar="64";
+$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $_SESSION["email"] ) ) ) . "?d=" . urlencode( $defaultGravatar ) . "&s=1" . $sizeGravatar;
 
 $smarty->assign("loggedIn",true);
 $smarty->assign("gravatar",$grav_url);
 $smarty->assign("username",$_SESSION["username"]);
 $smarty->display('templates/header.html');
+$smarty->display('templates/profile.html');
 $smarty->display('templates/footer_javascript.html');
+$smarty->display('templates/profile_javascript.html');
 }
 $smarty->display('templates/footer_fin.html');
 ?>
-
-<div class="profile-wrap">
-<?php 
-echo '<img src="' . ("http://www.gravatar.com/avatar/" . md5( strtolower( trim( $_SESSION["email"] ) ) ) . '?d=' . urlencode( "http://lifes.gd/cloud.jpg" ) . "&s=150") . '" alt="" class="profile-avatar" />
-';
-echo '<li class="profile-settings">' . ( ( ( $_SESSION["username"] ) ) ) . '</li>';
-echo '<li class="profile-settings">' . ( ( ( $_SESSION["email"] ) ) ) . '</li>';
-?>
-</div>

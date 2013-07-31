@@ -1,0 +1,15 @@
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+$("#changeEmail").on("submit",function(e){
+
+$.post("changeEmail.php", { email: $("#email").val() })
+.done(function(data) {
+$("#changeEmailFeedback").html(data);
+});
+return false;
+});
+});
+
+</script>

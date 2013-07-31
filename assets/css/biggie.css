@@ -80,8 +80,15 @@ nav > ul > li > a:hover {
 
     .loggy {
         border-radius:0;
-        background:#212b35;
+        background:#2a3644;
         color:#fff!important;
+    }
+
+    .prof {
+        -webkit-border-radius:0px;
+        -moz-border-radius:0px;
+        border-radius:0px;
+        background:#2a3644;
     }
 
     .dropper {
@@ -134,8 +141,15 @@ nav > ul > li > a:hover {
 
     .loggy {
         border-radius:0;
-        background:#212b35;
+        background:#2a3644;
         color:#fff!important;
+    }
+
+    .prof {
+        -webkit-border-radius:0px;
+        -moz-border-radius:0px;
+        border-radius:0px;
+        background:#2a3644;
     }
 
     .dropper {

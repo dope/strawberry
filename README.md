@@ -3,29 +3,29 @@ Strawberry is a simplistic but advanced user system. It was built with PHP & MyS
 
 Designed by [@joericho](http://twitter.com/joericho) & developed by [@extramaster](https://twitter.com/extramaster)
 
+# Install with [Bower](http://bower.io)
+```
+bower install strawberry
+```
+
 # Getting Started
 First download the [master.zip](https://github.com/lifesgood/strawberry/archive/master.zip) and extract to your server and then open up `settings.php` and change the following details:
 
 ```
-/* DATABASE-RELATED VARIABLES */
-
-// This is where your MySQL server should be located..
+// The name of your server eg. Localhost or http://127.0.0.1
 define("DB_host","localhost");
 
-// This is where the MySQL credientials is set
-define("DB_username","Your DB Username");
-define("DB_password","Your Password");
+// This is where the MySQL user details are set
+define("DB_username","root");
+define("DB_password","root");
 
 // This is the "database" name of the login system...
-define("DB_name","Your DB name");
+define("DB_name","strawberry");
 
-
-/* LOGINSYSTEM-RELATED VARIABLES */
-
-// This is the email that is to be used in the email's headers
+// This is where your email is desired
 define("SET_email","your@domain.com");
 
-// This is where the login system to be located at..
+// The directory of Strawberry (where you've installed it)
 define("SET_directory","your location for Strawberry");
 
 // This is where the name of the system can be set!
@@ -47,6 +47,4 @@ If you have any issues or questions please [get in touch](https://github.com/lif
 
 You can follow us on twitter at: [@joericho](http://twitter.com/joericho) & [@extramaster](http://twitter.com/extramaster)
 
-# Monkey
-If you've downloaded this and used it, fancy giving something back? We've put together a small survey for users to give us the best feedback, ever. Fill our Survey Monkey [form](http://www.surveymonkey.com/s/GRWVTRN) out
 Thanks <3

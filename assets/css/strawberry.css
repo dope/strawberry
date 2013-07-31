@@ -45,6 +45,36 @@ body.landing {
     }
 }
 
+@keyframes main-bod {
+    0% {
+        background:#212b36;
+        color:#fff;
+    }
+
+    100% {
+        background: #f4f4f4;
+        color:#212b36;
+    }
+}
+@-webkit-keyframes main-bod {
+    0% {
+        background:#212b36;
+        color:#f4f4f4;
+    }
+
+    100% {
+        background: #f4f4f4;
+        color:#212b36;
+    }
+}
+
+.trans {
+  -webkit-animation: main-bod 1.5s 1 ease-in-out;
+  -moz-animation: main-bod 1.5s 1 ease-in-out;
+  -o-animation: main-bod 1.5s 1 ease-in-out;
+
+}
+
 form {
   text-align: center;
   margin: 50px auto;
@@ -148,6 +178,11 @@ form:after {
 }
 ::-moz-placeholder {
   color: #ffffff;
+}
+.invalid {
+  color:#fff;
+  font-size:15px;
+  padding:20px;
 }
 .form-left {
   text-align: left;
@@ -297,6 +332,7 @@ form:after {
   -webkit-border-radius:6px;
   -moz-border-radius:6px;
   border-radius:6px;
+  width:150px;
   margin-top:80px;
   margin-bottom:30px;
 }

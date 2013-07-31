@@ -29,7 +29,7 @@ $(document).ready(function () {
 
 // Dropdown 
 $(document).ready(function(e){
-   $('.log-block').on('click',function(){
+   $('.log-block').on('touchstart click',function(){
       $('.dropper').stop().slideToggle();
    });
 })

@@ -1,35 +1,23 @@
 <?php
 
-
-/* DATABASE-RELATED VARIABLES */
-
-// This is where your MySQL server should be located..
+// The name of your server eg. Localhost or http://127.0.0.1
 define("DB_host","localhost");
 
-// This is where the MySQL credientials is set
+// This is where the MySQL user details are set
 define("DB_username","root");
 define("DB_password","root");
 
 // This is the "database" name of the login system...
 define("DB_name","strawberry");
 
-
-
-
-
-/* LOGINSYSTEM-RELATED VARIABLES */
-
-// This is the email that is to be used in the email's headers
+// This is where your email is desired
 define("SET_email","your@domain.com");
 
-// This is where the login system to be located at..
+// The directory of Strawberry (where you've installed it)
 define("SET_directory","your location for Strawberry");
 
 // This is where the name of the system can be set!
 define("SET_name","Strawberry");
-
-
-
 
 /* SECURITY-RELATED VARIABLES */
 
