@@ -23,7 +23,8 @@ $smarty->assign("name",SET_name);
 // Variables involved when the user is already logged in
 $defaultGravatar="http://lifes.gd/cloud.jpg";
 $sizeGravatar="64";
-$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $_SESSION["email"] ) ) ) . "?d=" . urlencode( $defaultGravatar ) . "&s=1" . $sizeGravatar;
+$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $_SESSION["email"] ) ) ) . "?d=" . urlencode( $defaultGravatar ) . "&s=150" . $sizeGravatar;
+
 
 $smarty->assign("loggedIn",true);
 $smarty->assign("gravatar",$grav_url);

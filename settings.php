@@ -11,10 +11,10 @@ define("DB_password","root");
 define("DB_name","strawberry");
 
 // This is where your email is desired
-define("SET_email","your@domain.com");
+define("SET_email","hello@lifes.gd");
 
 // The directory of Strawberry (where you've installed it)
-define("SET_directory","your location for Strawberry");
+define("SET_directory","http://lifes.gd/strawberry/demo");
 
 // This is where the name of the system can be set!
 define("SET_name","Strawberry");

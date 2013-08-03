@@ -19,7 +19,7 @@ die();
 $smarty->display('templates/header.html');
 // it is assumed that the data is valid first!
 $valid=true;
-$errorMsg="Invalid registration details! Please re-register!";
+c="Invalid registration details! Please re-register!";
 // Setup inital variables from the registration form!
 if(isset($_POST["username"])) {
     $username=htmlentities($_POST["username"]);

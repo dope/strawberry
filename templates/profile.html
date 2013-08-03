@@ -2,6 +2,14 @@
 <img src="{$gravatar}" alt="" class="profile-avatar" />
 
 <li class="profile-settings">{$username}</li>
-<li class="profile-settings">{$email}</li>
 
+
+	<div class="bit-1 formLife">
+		<h1 class="updateHead">Update your details.</h1>
+		<form class="updatedEmail" action="changeEmail.php" method="post" id="changeEmail">
+			<input type="text" name="email" placeholder="Email" id="email"/>
+			<input class="salmon" type="submit" name="update" value="Update"/>
+			<p id="changeEmailFeedback"></p>
+		</form>
+	</div>
 </div>
