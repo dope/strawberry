@@ -406,36 +406,3 @@ form:after {
   font-size:20px;
   font-weight:600;
 }
-
-.profile-settings:last-of-type {
-  margin-bottom:60px;
-}
-
-.formLife {
-  background:#212b36;
-  padding:50px;
-}
-
-.salmon {
-    background: #f26964;
-}
-
-#changeEmailFeedback {
-  margin-top:20px;
-  margin-bottom:0;
-  font-size:20px;
-  padding:10px;
-  color:#fff;
-}
-
-.updatedEmail {
-  margin-top:0px;
-}
-
-.updateHead {
-  padding:30px;
-  padding-top:40px;
-  font-size:2em;
-  color:#fff;
-  font-weight:100;
-}
