@@ -1,5 +1,5 @@
 # [Strawberry](http://lifes.gd/strawberry)
-Strawberry is a simplistic but advanced user system. It was built with PHP & MySQL and uses [Smarty](http://www.smarty.net) and [Lemonade](http://joey.so/lemonade).
+Strawberry is a simplistic but advanced user system. It was built with PHP & MySQL and uses [Smarty](http://www.smarty.net) and [Lemonade](http://lemonade.im).
 
 Designed by [@joericho](http://twitter.com/joericho) & developed by [@extramaster](https://twitter.com/extramaster)
 
