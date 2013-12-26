@@ -26,14 +26,6 @@ $(document).ready(function () {
     });
 });
 
-
-// Dropdown 
-$(document).ready(function (e) {
-    $('.log-block').on('touchstart click', function () {
-        $('.dropper').stop().slideToggle();
-    });
-});
-
 var navBtnFired = false;
 
 $(document).ready(function () {
@@ -53,3 +45,5 @@ $(document).ready(function () {
         return false;
     });
 });
+
+

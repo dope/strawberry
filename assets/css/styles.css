@@ -577,12 +577,28 @@ form:after {
 }
 .dropper {
     position:absolute;
-    background:#fff;
     border-radius:4px;
-    top:70px;
-    right:32px;
-    display:none;
+    top:-80px;
+    right:10px;
     text-align:left;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.dropper:hover {
+    opacity:1;
+    top:73px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.log-block:hover ~ .dropper {
+    opacity:1;
+    top:73px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .block {
     display:block;
@@ -842,6 +858,18 @@ form:after {
         border-right:0;
         border-bottom:0;
     }
+    
+    .dropper:hover {
+        top:130px;
+    }
+
+    .log-block:hover ~ .dropper {
+        top:130px;
+    }
+
+    .log-block {
+        border-radius: 0px;
+    }
 
     .loggy {
         border-radius:0;
@@ -964,11 +992,17 @@ form:after {
         border-right:0;
         border-bottom:0;
     }
+    
+    .dropper:hover {
+        top:130px;
+    }
 
-    .loggy {
-        border-radius:0;
-        background:#2a3644;
-        color:#fff!important;
+    .log-block:hover ~ .dropper {
+        top:130px;
+    }
+
+    .log-block {
+        border-radius: 0px;
     }
 
     .prof {
@@ -1045,6 +1079,10 @@ form {
 
   .form-left,.form-right {
     width:50%;
+  }
+
+  nav {
+    height:60px;
   }
 
   .forgot {
