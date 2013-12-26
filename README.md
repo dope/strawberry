@@ -3,13 +3,13 @@ Strawberry is a simplistic but advanced user system. It was built with PHP & MyS
 
 Designed by [@joericho](http://twitter.com/joericho) & developed by [@extramaster](https://twitter.com/extramaster)
 
-# Install with [Bower](http://bower.io)
+### Install with [Bower](http://bower.io)
 ```
 bower install strawberry
 ```
 
-# Getting Started
-First download the [master.zip](https://github.com/lifesgood/strawberry/archive/master.zip) and extract to your server and then open up `settings.php` and change the following details:
+### Getting Started
+First download the [master.zip](https://github.com/lifesgood/strawberry/archive/master.zip) and extract to your server and then open up `settings.php and change the following details:
 
 ```
 // The name of your server eg. Localhost or http://127.0.0.1
@@ -34,12 +34,12 @@ define("SET_name","Strawberry");
 
 Once completed the above, open the directory you have extracted Strawberry to, and create your account, confirm your email and then login.
 
-# What's what
+### What's what
 Obviously you're looking for the page to add your "hidden" content, navigate to `templates > index_registered.html`
 
 Structuring your content with [Lemonade](https://github.com/dope/lemonade/blob/master/README.md) has never been easier, read the [docs](https://github.com/dope/lemonade/blob/master/README.md) for more help.
 
-# It's that simple.
+### It's that simple.
 Yes, we've kept it simple - there is no admin panel or profile page (something we'd probably like to expand to), but it's really just a simplistic user system where
 designers/developers can easily build their product on top of it.
 
