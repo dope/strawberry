@@ -1,49 +1,21 @@
-var tmpHeight;
-
-$(document).ready(function () {
-    $(".up").click(function (event) {
-        event.preventDefault();
-        $(".pop").stop().fadeIn(300);
-        positionPopup();
+$(document).ready(function (e) {
+    $('.hit-1').on('click',function(){
+       $('.one').removeClass('go');
+        $(this).addClass('go');
     });
 
-    $(".pop > span").click(function () {
-        $(".pop").stop().fadeOut(300);
+    $('.hit-2').on('click',function(){
+       $('.two').removeClass('go');
+        $(this).addClass('go');
     });
 
-    $("#welcomesUser").click(function (event) {
-        event.preventDefault();
-        tmpHeight = $("#externalProfileBox").css("height");
-        $("#externalProfileBox").stop().css({
-            height: "0%",
-            display: "block"
-        }).animate({
-            height: tmpHeight,
-            opacity: "1"
-        }, {
-            queue: false
-        });
+    $('.hit-3').on('click',function(){
+       $('.three').removeClass('go');
+        $(this).addClass('go');
+    });
+
+    $('.hit-4').on('click',function(){
+       $('.four').removeClass('go');
+        $(this).addClass('go');
     });
 });
-
-var navBtnFired = false;
-
-$(document).ready(function () {
-    $(".nav-btn").on('touchstart click', function () {
-        if (!navBtnFired) {
-            navBtnFired = true;
-            setTimeout(function () {
-                navBtnFired = false;
-            }, 100);
-
-            if ($("nav").css("height") == "60px") { // main nav height
-                $("nav").css("height", "100%"); // full height of nav
-            } else {
-                $("nav").css("height", "60px"); // return to normal state
-            }
-        }
-        return false;
-    });
-});
-
-

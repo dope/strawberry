@@ -1,7 +1,13 @@
 <div class="profile-wrap">
-<img src="{$gravatar}" alt="" class="profile-avatar" />
+	<img src="{$gravatar}" alt="" class="profile-avatar" />
+	<li class="profile-settings">{$username}</li>
+	<li class="profile-settings">{$email}</li>
 
-<li class="profile-settings">{$username}</li>
-<li class="profile-settings">{$email}</li>
-
-</div>
+	<div class="bit-1 formLife">
+		<h1>Update your Email.</h1>
+		<form class="updatedEmail" action="changeEmail.php" method="post" id="changeEmail">
+			<input type="text" name="email" placeholder="{$username}" id="email"/>
+			<input class="salmon" type="submit" name="update" value="Update"/>
+			<p id="changeEmailFeedback"></p>
+		</form>
+	</div>
